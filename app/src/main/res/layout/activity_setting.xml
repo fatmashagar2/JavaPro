@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud2"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <!-- Container for both player image containers side by side -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <!-- Container for Settings option -->
+    <LinearLayout
+        android:id="@+id/settingsContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_back_dark_blue"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="137dp"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Image for Settings -->
+                <ImageView
+                    android:id="@+id/imageSettings"
+                    android:layout_width="110dp"
+                    android:layout_height="105dp"
+                    android:contentDescription="Settings"
+                    android:src="@drawable/setting" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Container for Music and Sound selection using circles -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <!-- Additional settings for music and sound using circles -->
+    <LinearLayout
+        android:id="@+id/additionalSettingsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Music checkbox with text -->
+        <CheckBox
+            android:id="@+id/checkboxMusic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:padding="8dp" />
+
+        <!-- Spacer between checkboxes -->
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Sound checkbox with text -->
+        <CheckBox
+            android:id="@+id/checkboxSound2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sound"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Language options -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <!-- Row 1: English and French -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Language 1: English -->
+        <FrameLayout
+            android:id="@+id/buttonEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <!-- Space between languages -->
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Language 2: French -->
+        <FrameLayout
+            android:id="@+id/buttonFrench"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="French"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Row 2: Arabic -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Language 3: Arabic -->
+        <FrameLayout
+            android:id="@+id/buttonArabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arabic"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Row 3: Spanish and German -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Language 4: Spanish -->
+        <FrameLayout
+            android:id="@+id/buttonSpanish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spanish"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <!-- Space between languages -->
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Language 5: German -->
+        <FrameLayout
+            android:id="@+id/buttonGerman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_back_dark_blue"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="German"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

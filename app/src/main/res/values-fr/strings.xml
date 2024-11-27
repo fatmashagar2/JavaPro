@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mon jeu de Tic-Tac-Toe</string>
+    <string name="music">Musique</string>
+    <string name="sound">Son</string>
+    <string name="english">Anglais</string>
+    <string name="french">Français</string>
+    <string name="arabic">Arabe</string>
+    <string name="spanish">Espagnol</string>
+    <string name="german">Allemand</string>
+</resources>

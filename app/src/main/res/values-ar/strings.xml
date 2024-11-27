@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">لعبة إكس أو</string>
+    <string name="music">موسيقى</string>
+    <string name="sound">صوت</string>
+    <string name="english">إنجليزي</string>
+    <string name="french">فرنسي</string>
+    <string name="arabic">عربي</string>
+    <string name="spanish">إسباني</string>
+    <string name="german">ألماني</string>
+</resources>

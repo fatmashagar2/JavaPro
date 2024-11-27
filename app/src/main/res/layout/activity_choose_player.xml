@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/choosePlayerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud2"
+    tools:context=".ChoosePlayerActivity">
+
+    <!-- Player Symbols Section -->
+    <LinearLayout
+        android:id="@+id/playerSymbolsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <!-- Player One Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/playerOneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/playerOneSymbol"
+                android:layout_width="159dp"
+                android:layout_height="143dp"
+                android:background="@drawable/round_back_dark_blue"
+                android:padding="10dp"
+                android:src="@drawable/close" />
+        </LinearLayout>
+
+        <!-- Space between Player Sections -->
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+
+        <!-- Player Two Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/playerTwoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robot"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/playerTwoSymbol"
+                android:layout_width="169dp"
+                android:layout_height="159dp"
+                android:background="@drawable/round_back_dark_blue"
+                android:padding="10dp"
+                android:src="@drawable/o" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Start Game ImageView with Text -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/startGameImageView"
+            android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:background="@drawable/round_back_dark_blue" /> <!-- Use dark blue drawable -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
